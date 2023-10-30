@@ -14,7 +14,12 @@ export async function performRequest({
                                          variables = {},
                                          includeDrafts = false,
                                          excludeInvalid = false,
-                                     }) {
+                                     }: {
+    query: any,
+    variables?: any,
+    includeDrafts?: boolean,
+    excludeInvalid?: boolean
+}) {
     const {data} = await dedupedFetch(JSON.stringify({
         method: "POST",
         headers: {
