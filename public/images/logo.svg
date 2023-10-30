@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="L_to_S" data-name="L to S" xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 1024 1024">
+    <defs>
+        <style>
+            .cls-1 {
+            fill: url(#Dégradé_sans_nom_197);
+            }
+
+            .cls-1, .cls-2, .cls-3, .cls-4, .cls-5 {
+            stroke: #9a8052;
+            stroke-miterlimit: 10;
+            }
+
+            .cls-2, .cls-3 {
+            fill: #fff;
+            }
+
+            .cls-2, .cls-5 {
+            stroke-width: .25px;
+            }
+
+            .cls-4 {
+            fill: none;
+            }
+
+            .cls-5 {
+            fill: url(#Dégradé_sans_nom_110);
+            }
+        </style>
+        <radialGradient id="Dégradé_sans_nom_197" data-name="Dégradé sans nom 197" cx="512" cy="513.5" fx="512"
+                        fy="285.32" r="398.37" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#d1c6b1"/>
+            <stop offset=".24" stop-color="#cfc3ad"/>
+            <stop offset=".44" stop-color="#c9bca3"/>
+            <stop offset=".62" stop-color="#bfaf92"/>
+            <stop offset=".79" stop-color="#b19e7b"/>
+            <stop offset=".95" stop-color="#a0875c"/>
+            <stop offset="1" stop-color="#9a8052"/>
+        </radialGradient>
+        <linearGradient id="Dégradé_sans_nom_110" data-name="Dégradé sans nom 110" x1="512" y1="474.72" x2="512"
+                        y2="696.82" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#faead7"/>
+            <stop offset=".16" stop-color="#f9e9d5" stop-opacity=".99"/>
+            <stop offset=".3" stop-color="#f9e7d1" stop-opacity=".95"/>
+            <stop offset=".43" stop-color="#f8e3ca" stop-opacity=".88"/>
+            <stop offset=".55" stop-color="#f6debf" stop-opacity=".78"/>
+            <stop offset=".66" stop-color="#f4d7b2" stop-opacity=".65"/>
+            <stop offset=".78" stop-color="#f2cfa2" stop-opacity=".5"/>
+            <stop offset=".89" stop-color="#f0c58f" stop-opacity=".32"/>
+            <stop offset="1" stop-color="#edba79" stop-opacity=".11"/>
+            <stop offset="1" stop-color="#edba79" stop-opacity=".1"/>
+        </linearGradient>
+    </defs>
+    <g id="Ronds-3" data-name="Ronds">
+        <circle class="cls-1" cx="512" cy="513.5" r="398.37"/>
+        <circle class="cls-4" cx="514" cy="513.5" r="486.5"/>
+    </g>
+    <path id="Jambes" class="cls-3"
+          d="m889.29,670.14c-23.78-52.11-146.59-47.12-274.31,11.16-38.82,17.71-73.61,38.31-102.59,59.86-29.13-21.77-64.21-42.58-103.38-60.46-127.72-58.28-250.53-63.27-274.31-11.16-23.78,52.11,60.48,141.6,188.2,199.88,60.19,27.46,119.29,43.09,167.44,46.49,53.01,6.14,130.92-9.47,210.75-45.89,127.72-58.28,211.98-147.76,188.2-199.88Z"/>
+    <g id="Corp-3" data-name="Corp">
+        <path class="cls-5"
+              d="m604.69,493.33c-18.4-17.46-46.4-22.54-70.02-14.67-14.28,4.76-29.67,4.74-43.91-.12-23.85-8.14-51.81-3.3-69.84,14.79-13.27,13.31-19.39,31.25-19.73,49.31-.37,19.96,6.84,39.21,19.21,54.07,21.86,26.25,84.24,100.35,91.62,100.11,7.43-.24,69.02-72.75,90.56-98.37,6.47-7.69,11.6-16.6,14.82-26.39,8.93-27.18,8.18-58.91-12.71-78.73Z"/>
+        <path class="cls-2"
+              d="m708.16,356.14c-52.06-45.84-140.47-48.22-194.44-4.45-55.16-44.01-143.51-42.96-194.44,4.45-52.86,49.21-52.11,130.6-17.03,185.18,0,0,62.85,120.25,159.8,120.25-40.54-31.73-58.17-59.93-58.17-59.93-22.71-35.33-44.07-70.51-15.72-106.63,27.81-35.44,90.18-31.37,125.89-2.88,34.94-28.34,98.99-33.08,125.89,2.88,23.06,30.83,2.21,70.53-19.24,108.39,0,0-12.51,23.7-58.17,58.17,82.85,0,156.82-116.35,156.82-116.35,33.13-58.47,43.02-141.35-11.18-189.07Z"/>
+    </g>
+    <g id="Tete-3" data-name="Tete">
+        <path class="cls-2"
+              d="m602.33,198.14c0-.05,0-.11,0-.16h0c-.23-49.7-40.58-89.91-90.33-89.91s-90.1,40.22-90.33,89.91h0c0,.06,0,.11,0,.17,0,.08,0,.17,0,.25,0,3.63.22,7.21.64,10.72,4.9,46.4,37.81,87.05,89.7,132.03,41.83-40.41,78.5-78.44,87.97-122.12,1.55-6.63,2.37-13.53,2.37-20.63,0-.09,0-.17,0-.26Z"/>
+    </g>
+</svg>

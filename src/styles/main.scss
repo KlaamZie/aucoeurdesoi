@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Quattrocento:wght@400;700&display=swap');
+
+// Base
+@import "./base/base";
+@import "./base/typography";
+@import "./base/colors";
+@import "./base/reset";
+
+// Components
+@import "./components/section_1/index";
+@import "./components/section_2/index";
+@import "./components/section_3/index";
+@import "./components/section_3/services";
+@import "./components/section_4/index";
+@import "./components/section_5/index";
+@import "./components/nav/index";

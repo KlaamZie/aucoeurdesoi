@@ -1,0 +1,195 @@
+.section_5 {
+  background: $bg;
+
+  padding: 1.25rem 1rem 5rem;
+
+  &_title {
+    font-family: $serif;
+    font-size: 2.5rem;
+    color: $primary;
+    font-weight: 400;
+  }
+
+  &_form {
+    margin-top: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+
+    &_field {
+      display: flex;
+      flex-direction: column;
+      gap: 0.63rem;
+
+      > label {
+        font-family: $sans_serif;
+        font-size: 1.25rem;
+        color: $primary;
+        font-weight: 400;
+      }
+
+      > input, > textarea {
+        border-radius: 0.3125rem;
+        border: 1px solid $primary;
+        padding: 0.5rem 1rem;
+        background: transparent;
+
+        font-family: $sans_serif;
+        font-size: 1rem;
+        font-weight: 400;
+
+        color: $primary;
+      }
+    }
+
+    > input[type="submit"] {
+      align-self: center;
+      border-radius: 0.3125rem;
+      border: 1px solid $primary;
+
+      width: fit-content;
+      padding: 0.5rem 2.8rem;
+
+      font-family: $sans_serif;
+      font-size: 1.5rem;
+      font-weight: 400;
+
+      color: $primary;
+      background: transparent;
+    }
+  }
+
+  &_other {
+    padding: 5rem 0 0 0;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+
+    &_map {
+      height: 300px;
+      width: 100%;
+      background: gray;
+      border: none;
+    }
+
+    &_socials {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+
+      > a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        border: none;
+
+        font-size: 1.5rem;
+        color: $primary;
+      }
+    }
+
+    &_backtop {
+      > button {
+        cursor: pointer;
+        width: 100%;
+        border-radius: 0.3125rem;
+        border: 1px solid $primary;
+        background: none;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+
+        padding: 0.5rem 1rem;
+
+        > span {
+          font-family: $serif;
+          font-size: 1.875rem;
+          font-weight: 700;
+
+          color: $primary;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .section_5 {
+    display: flex;
+
+    width: 100%;
+    padding: 2.5rem 2.5rem 5rem;
+
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .section_5 {
+    padding: 5rem;
+
+    &_other {
+      padding-top: 5rem;
+
+      display: grid;
+      grid-template-columns: 1fr fit-content(100%);
+      row-gap: 2.5rem;
+      column-gap: 0;
+
+      &_map {
+        grid-column: 1 / end;
+      }
+
+      &_socials {
+        justify-content: start;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .section_5 {
+    padding: 5rem 10rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 2.5rem;
+    column-gap: 5rem;
+
+    position: relative;
+
+    &_title {
+      grid-column: span 2;
+    }
+
+    &_form {
+      margin: 0;
+    }
+
+    &_other {
+      padding: 0;
+      grid-template-rows: 1fr fit-content(100%);
+
+      &_map {
+        height: 100%;
+      }
+
+      &_socials {
+        grid-column: 2;
+        grid-row: 2;
+        align-items: end;
+      }
+
+      &_backtop {
+        position: absolute;
+        top: 4.5rem;
+        right: 10rem;
+      }
+    }
+  }
+}

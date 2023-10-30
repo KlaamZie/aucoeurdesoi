@@ -1,0 +1,86 @@
+.services {
+  margin: 2.5rem 1rem 0rem;
+
+  &__item {
+    border-top: 2px solid $primary;
+    padding: 1.25rem 0rem;
+
+    &_title {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+
+      &_text {
+        font-size: 1.5rem;
+        color: $primary;
+        font-family: $serif;
+        font-weight: bold;
+      }
+
+      > svg {
+        transition: all .2s linear;
+      }
+
+      > svg[aria-expanded="true"] {
+        transform: rotate(-180deg);
+      }
+    }
+
+    &_content {
+      display: grid;
+      grid-template-rows: 0fr;
+      transition: all .2s linear;
+
+      font-family: $sans_serif;
+      color: $primary;
+      font-size: 0.875rem;
+
+      > div {
+        overflow: hidden;
+        opacity: 0;
+        transition: all .6s linear;
+        text-align: justify;
+      }
+
+      &[aria-hidden="false"] {
+        grid-template-rows: 1fr;
+        margin-top: 1.25rem;
+
+        > div {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .services {
+    margin: 10rem 0 0;
+
+    &__item {
+      &_title {
+        &_text {
+          font-size: 2.25rem;
+        }
+      }
+
+      &_content {
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .services {
+    &__item {
+      &_title {
+        &_text {
+          font-size: 2.5rem;
+        }
+      }
+    }
+  }
+}
