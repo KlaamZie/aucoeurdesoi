@@ -1,0 +1,30 @@
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+
+  &_fixed {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+  }
+
+  &_content {
+    text-decoration: none;
+    border-radius: 0.3125rem;
+    border: 1px solid $primary;
+    padding: 0.5rem 1rem;
+    background: $bg;
+
+    font-family: $sans_serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+
+    color: $primary;
+  }
+
+  &.hidden {
+    opacity: 0;
+  }
+}

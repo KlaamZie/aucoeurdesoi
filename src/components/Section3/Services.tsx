@@ -40,7 +40,10 @@ function Services({massages}: { massages: Massage[] }) {
                 massages.map((massage, index) => {
                     return <div className={"services__item"} onClick={() => openSection(index)} key={index}>
                         <div className={"services__item_title"}>
-                            <h3 className={"services__item_title_text"}>{massage.titre}</h3>
+                            <div className={"services__item_title_wrapper"}>
+                                <h3 className={"services__item_title_text"}>{massage.titre}</h3>
+                                <p className={"services__item_title_subtext"}>Durée {massage.duree} - {massage.prix}</p>
+                            </div>
                             <svg
                                 width="25"
                                 height="13"

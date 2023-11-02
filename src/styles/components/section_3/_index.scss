@@ -13,25 +13,7 @@
     }
 
     &_btn {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
       margin: 2.5rem 0;
-
-      &_content {
-        text-decoration: none;
-        border-radius: 0.3125rem;
-        border: 1px solid $primary;
-        padding: 0.5rem 1rem;
-        background: transparent;
-
-        font-family: $sans_serif;
-        font-size: 1.5rem;
-        font-weight: 400;
-
-        color: $primary;
-      }
     }
 
   }
@@ -99,7 +81,7 @@
 @media screen and (min-width: 1440px) {
   .section_3 {
     display: grid;
-    grid-template-columns: minmax(22rem, 32rem) fit-content(100%) 1fr;
+    grid-template-columns: 35% 1fr;
     align-items: start;
 
     &__container {

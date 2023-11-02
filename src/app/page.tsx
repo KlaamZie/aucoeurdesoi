@@ -98,6 +98,15 @@ const App = async () => {
                     data={{titre: section3.titre, bouton: section3.bouton, image: section3.image, items: allMassages}}/>
                 <Section4 data={section4}/>
                 <Section5 data={section5}/>
+                <div className={"btn btn_fixed take_rdv_btn"}>
+                    <a
+                        className={"btn_content"}
+                        href={"https://cal.com/enzo-viry-hzlkwy"}
+                        target={"_blank"}
+                    >
+                        {section3.bouton}
+                    </a>
+                </div>
             </main>
         </>
     )
