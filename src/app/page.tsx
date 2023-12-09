@@ -101,7 +101,7 @@ const App = async () => {
                 <div className={"btn btn_fixed take_rdv_btn"}>
                     <a
                         className={"btn_content"}
-                        href={"https://cal.com/enzo-viry-hzlkwy"}
+                        href={"https://cal.com/aucoeurdesoi"}
                         target={"_blank"}
                     >
                         {section3.bouton}

@@ -34,7 +34,7 @@ function Section3({data}: { data: Section3 }) {
                 <div className={"btn section_3__container_btn"}>
                     <a
                         className={"btn_content"}
-                        href={"https://cal.com/enzo-viry-hzlkwy"}
+                        href={"https://cal.com/aucoeurdesoi"}
                         target={"_blank"}
                     >
                         {data.bouton}
