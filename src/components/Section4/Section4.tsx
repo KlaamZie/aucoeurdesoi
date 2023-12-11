@@ -3,7 +3,6 @@ import parse from 'html-react-parser';
 
 
 function Section4({data}: { data: Section4 }) {
-    console.log(data)
     return (
         <section className={"section_4"} id={"section_4"}>
             <h2 className={"section_4__title"}>{data.titre}</h2>
