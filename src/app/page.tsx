@@ -5,6 +5,8 @@ import Section3 from "@/components/Section3/Section3";
 import Section4 from "@/components/Section4/Section4";
 import Section5 from "@/components/Section5/Section5";
 import {performRequest} from "@/lib/datocms";
+import Section6 from "@/components/Section6/Section6";
+
 
 const PAGE_CONTENT_QUERY = `
   query Page {
@@ -75,6 +77,9 @@ const PAGE_CONTENT_QUERY = `
         facebook
         instagram
     }
+    contreIndication {
+        texte
+    }
   }`;
 
 const App = async () => {
@@ -86,8 +91,10 @@ const App = async () => {
         section3,
         allMassages,
         section4,
-        section5
+        section5,
+        contreIndication
     } = await performRequest({query: PAGE_CONTENT_QUERY});
+
     return (
         <>
             <Navbar data={navbar}/>
@@ -98,6 +105,7 @@ const App = async () => {
                     data={{titre: section3.titre, bouton: section3.bouton, image: section3.image, items: allMassages}}/>
                 <Section4 data={section4}/>
                 <Section5 data={section5}/>
+                <Section6 data={contreIndication}/>
                 <div className={"btn btn_fixed take_rdv_btn"}>
                     <a
                         className={"btn_content"}

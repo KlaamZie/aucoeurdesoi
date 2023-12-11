@@ -35,6 +35,10 @@ export interface Section5 {
     instagram: string;
 }
 
+export interface Section6 {
+    texte: string;
+}
+
 interface Image {
     url: string;
     alt: string;
