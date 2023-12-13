@@ -2,6 +2,7 @@ import '@/styles/main.scss'
 import {performRequest} from "@/lib/datocms";
 import {Metadata, ResolvingMetadata} from "next";
 import {toNextMetadata} from "react-datocms";
+import Navbar from "@/components/Navbar";
 
 const PAGE_CONTENT_QUERY = `
   query Page {
@@ -19,6 +20,13 @@ const PAGE_CONTENT_QUERY = `
           tag
         }
       }
+      navbar {
+        citation
+        logo {
+            alt
+            url
+        }
+     }
   }`;
 
 export async function generateMetadata(
@@ -33,9 +41,16 @@ export async function generateMetadata(
 }
 
 export default async function RootLayout({children}: { children: React.ReactNode }) {
+    const {
+        navbar,
+    } = await performRequest({query: PAGE_CONTENT_QUERY});
     return (
         <html lang="fr">
-        <body>{children}</body>
+
+        <body>
+        <Navbar data={navbar}/>
+        {children}
+        </body>
         </html>
     )
 }
