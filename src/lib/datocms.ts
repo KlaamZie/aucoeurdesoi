@@ -1,13 +1,11 @@
-import {cache} from 'react';
-
-const dedupedFetch = cache(async (serializedInit: string) => {
+const dedupedFetch = async (serializedInit: string) => {
     const response = await fetch("https://graphql.datocms.com/", JSON.parse(serializedInit));
     const responseBody = await response.json();
     if (!response.ok) {
         throw new Error(`${response.status} ${response.statusText}: ${JSON.stringify(responseBody)}`);
     }
     return responseBody;
-})
+};
 
 export async function performRequest({
                                          query,
